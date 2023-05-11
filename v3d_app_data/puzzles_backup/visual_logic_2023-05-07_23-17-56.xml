@@ -1,0 +1,56 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="init" type="InitTab" active="false" scrollx="1192" scrolly="615.5" scale="0.9"></tab>
+  <tab name="main" type="MainTab" active="true" scrollx="1196" scrolly="686.5" scale="0.9">
+    <block xmlns="https://developers.google.com/blockly/xml" type="hide" id="iN(x2[O$%I~|9v$qyCr0" x="-1170" y="-570">
+      <value name="VALUE">
+        <shadow type="objectList" id="J:oMwu(4[kR2X7Rjg{Mf">
+          <field name="FIELDNAME">Cube</field>
+        </shadow>
+      </value>
+      <next>
+        <block type="unloadScene" id="uI:sug#$FNL:Z|rL9OR+" disabled="true">
+          <value name="URL">
+            <shadow type="text" id="d_Qz{pQt~f#Tg64*Rw*q">
+              <field name="TEXT">gary_app.gltf</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="appendScene" id="(2I*Hnqn^jITT$pBu|vc">
+              <mutation xmlns="http://www.w3.org/1999/xhtml" enableonprogress="false" enableonerror="false" loadcameras="false" loadlights="false" enablealias="false"></mutation>
+              <value name="URL">
+                <shadow type="text" id="Fu1oE{pN^/M5$BuxMb^N">
+                  <field name="TEXT">./cocacola.gltf</field>
+                </shadow>
+              </value>
+            </block>
+          </next>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="autoRotateCamera" id="-9uvQ4Z@%1f}3%2q8$A9" x="-1150" y="-250">
+      <field name="ON_OFF">OFF</field>
+      <value name="SPEED">
+        <shadow type="math_number" id="x?1E+I)HWEWmxv4Fe[s8">
+          <field name="NUM">2</field>
+        </shadow>
+      </value>
+      <next>
+        <block type="setCameraParam" id="WaweDjDDpLaDk-{@)i%K">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" type="FIELD_OF_VIEW"></mutation>
+          <field name="TYPE">FIELD_OF_VIEW</field>
+          <value name="FIELD_OF_VIEW">
+            <shadow type="math_number" id="B6el#]v3+V|3QGEww/CY">
+              <field name="NUM">50</field>
+            </shadow>
+          </value>
+          <value name="OBJECT">
+            <shadow type="objectList" id="^sK0rCE$zjBr(vL$pThG">
+              <field name="FIELDNAME">./cocacola.gltf</field>
+            </shadow>
+          </value>
+        </block>
+      </next>
+    </block>
+  </tab>
+  <editorsettings viewport-x="1518" viewport-y="28" viewport-w="1024" viewport-h="653.5" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+</xml>

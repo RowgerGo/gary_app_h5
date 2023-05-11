@@ -1,0 +1,236 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="init" type="InitTab" active="false" scrollx="1192" scrolly="615.4999999999999" scale="0.9"></tab>
+  <tab name="main" type="MainTab" active="true" scrollx="1281.4936958273304" scrolly="686.5" scale="0.9">
+    <block xmlns="https://developers.google.com/blockly/xml" type="hide" id="iN(x2[O$%I~|9v$qyCr0" x="-1290" y="-590">
+      <value name="VALUE">
+        <shadow type="objectList" id="J:oMwu(4[kR2X7Rjg{Mf">
+          <field name="FIELDNAME">Cube</field>
+        </shadow>
+      </value>
+      <next>
+        <block type="unloadScene" id="uI:sug#$FNL:Z|rL9OR+" disabled="true">
+          <value name="URL">
+            <shadow type="text" id="d_Qz{pQt~f#Tg64*Rw*q">
+              <field name="TEXT">gary_app.gltf</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="appendScene" id="(2I*Hnqn^jITT$pBu|vc">
+              <mutation xmlns="http://www.w3.org/1999/xhtml" enableonprogress="false" enableonerror="false" loadcameras="false" loadlights="false" enablealias="false"></mutation>
+              <value name="URL">
+                <shadow type="text" id="Fu1oE{pN^/M5$BuxMb^N">
+                  <field name="TEXT">./cocacola.gltf</field>
+                </shadow>
+              </value>
+            </block>
+          </next>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="I!Zr2|$)[vC!CBHItn{)" x="-770" y="-370">
+      <field name="EVENT">click</field>
+      <field name="PARENT">TRUE</field>
+      <value name="ID">
+        <shadow type="text" id="L%kLJUF$M7e(.$n1U%^P">
+          <field name="TEXT">#CokeSwitch</field>
+        </shadow>
+        <block type="querySelector" id="9%spG1s*6I{:$@kdk6/P">
+          <value name="QUERY">
+            <shadow type="text" id="Jdi*vzPo49TE`|ok3!(1">
+              <field name="TEXT">#CokeSwitch</field>
+            </shadow>
+          </value>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="console.log" id="{b2W1!Mlm-z#gk`eroA?">
+          <value name="VALUE">
+            <shadow type="text" id="D0loc(,:n(iSHMS,sD^u">
+              <field name="TEXT">Hello, #CokeSwitch</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="unloadScene" id="@l6FB9A*.S`V],O~F.Bw">
+              <value name="URL">
+                <shadow type="text" id="qrO@OUR{bUKbxkYFF1P_">
+                  <field name="TEXT">./sprite.gltf</field>
+                </shadow>
+              </value>
+              <next>
+                <block type="unloadScene" id="ID_-tv0V[bGK7I6]o(/J">
+                  <value name="URL">
+                    <shadow type="text" id=".{|$T0z|z^U}XpvnN(}r">
+                      <field name="TEXT">./dr.pepper.gltf</field>
+                    </shadow>
+                  </value>
+                  <next>
+                    <block type="appendScene" id="{0Uo}z88kRkjX7oi_I,d">
+                      <mutation xmlns="http://www.w3.org/1999/xhtml" enableonprogress="false" enableonerror="false" loadcameras="false" loadlights="false" enablealias="false"></mutation>
+                      <value name="URL">
+                        <shadow type="text" id="H^38NF/Yb4MfLEX7864^">
+                          <field name="TEXT">./cocacola.gltf</field>
+                        </shadow>
+                      </value>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </statement>
+      <next>
+        <block type="eventHTMLElem" id="[8B1Cr*l:5X31i9_02d/">
+          <field name="EVENT">click</field>
+          <field name="PARENT">TRUE</field>
+          <value name="ID">
+            <shadow type="text" id="?27q[yEow7)X[1@=[+]4">
+              <field name="TEXT">#SpriteSwitch</field>
+            </shadow>
+            <block type="querySelector" id="L4K_T!j3W9.,%PKldoSc">
+              <value name="QUERY">
+                <shadow type="text" id="yJ*f!T_$/;AJ1p|K(Pu9">
+                  <field name="TEXT">#SpriteSwitch</field>
+                </shadow>
+              </value>
+            </block>
+          </value>
+          <statement name="DO">
+            <block type="console.log" id=";a4{w~l};GG8UVE3W+xZ">
+              <value name="VALUE">
+                <shadow type="text" id="_lhZirKvo%hbh7p{zd6+">
+                  <field name="TEXT">Hello, SpriteSwitch</field>
+                </shadow>
+              </value>
+              <next>
+                <block type="unloadScene" id="Ie|0+anT[^2Vfvi{|i$.">
+                  <value name="URL">
+                    <shadow type="text" id="6FLvP%BrXGk8IU.YqsU.">
+                      <field name="TEXT">./cocacola.gltf</field>
+                    </shadow>
+                  </value>
+                  <next>
+                    <block type="unloadScene" id="|.1?W3_.V|CzyR.|e%jx">
+                      <value name="URL">
+                        <shadow type="text" id="Ibmux?om9f){KFBeJ#/;">
+                          <field name="TEXT">./dr.pepper.gltf</field>
+                        </shadow>
+                      </value>
+                      <next>
+                        <block type="appendScene" id="_9/Qg].EQh7PW.LIQ:K_">
+                          <mutation xmlns="http://www.w3.org/1999/xhtml" enableonprogress="false" enableonerror="false" loadcameras="false" loadlights="false" enablealias="false"></mutation>
+                          <value name="URL">
+                            <shadow type="text" id="%@`*xKP85amaR`?=kH=g">
+                              <field name="TEXT">./sprite.gltf</field>
+                            </shadow>
+                          </value>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </statement>
+          <next>
+            <block type="eventHTMLElem" id="/F?IP1gZ07!XqB:MlWg)">
+              <field name="EVENT">click</field>
+              <field name="PARENT">TRUE</field>
+              <value name="ID">
+                <shadow type="text">
+                  <field name="TEXT">#SpriteSwitch</field>
+                </shadow>
+                <block type="querySelector" id="#Pv^Z+vU#LpHpT724^XK">
+                  <value name="QUERY">
+                    <shadow type="text" id="5NbKDV-WKahA2tf!}9S=">
+                      <field name="TEXT">#PepperSwitch</field>
+                    </shadow>
+                  </value>
+                </block>
+              </value>
+              <statement name="DO">
+                <block type="console.log" id="ZA@(Vx4:vb8}W/j!XyRe">
+                  <value name="VALUE">
+                    <shadow type="text" id="9QYxBerGQ}{^v^d;2s/c">
+                      <field name="TEXT">Hello, PepperSwitch</field>
+                    </shadow>
+                  </value>
+                  <next>
+                    <block type="unloadScene" id="9WxS#hCxIRAYHLY-U~0Y">
+                      <value name="URL">
+                        <shadow type="text" id="L|[Xfn,F:kOeHA])S^R#">
+                          <field name="TEXT">./cocacola.gltf</field>
+                        </shadow>
+                      </value>
+                      <next>
+                        <block type="unloadScene" id=":.JfA;E3?zTmsqKo0K|C">
+                          <value name="URL">
+                            <shadow type="text" id="iEazFO[9`{fAE?`NA`t/">
+                              <field name="TEXT">./sprite.gltf</field>
+                            </shadow>
+                          </value>
+                          <next>
+                            <block type="appendScene" id="~[u%QS@)=)$cj)$fAKA#">
+                              <mutation xmlns="http://www.w3.org/1999/xhtml" enableonprogress="false" enableonerror="false" loadcameras="false" loadlights="false" enablealias="false"></mutation>
+                              <value name="URL">
+                                <shadow type="text" id="WjHy6J]mE]{Y*uf)0J+X">
+                                  <field name="TEXT">./dr.pepper.gltf</field>
+                                </shadow>
+                              </value>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </statement>
+            </block>
+          </next>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="autoRotateCamera" id="-9uvQ4Z@%1f}3%2q8$A9" x="-1350" y="-330">
+      <field name="ON_OFF">OFF</field>
+      <value name="SPEED">
+        <shadow type="math_number" id="x?1E+I)HWEWmxv4Fe[s8">
+          <field name="NUM">2</field>
+        </shadow>
+      </value>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="whenClicked" id="Kr7,oRdn0+TgIoTGs)l}" x="-1350" y="-170">
+      <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false" enableifmissed="false"></mutation>
+      <field name="X_RAY">FALSE</field>
+      <field name="DOUBLE_CLICK">FALSE</field>
+      <field name="LEFT_BUTTON">TRUE</field>
+      <field name="MIDDLE_BUTTON">TRUE</field>
+      <field name="RIGHT_BUTTON">TRUE</field>
+      <value name="VALUE">
+        <shadow type="objectList" id="U}DA6B!r4!q{?_.!7cjA">
+          <field name="FIELDNAME">&lt;none&gt;</field>
+        </shadow>
+        <block type="allObjectList" id="3L}}Y*F{-`OHyT8%:%3J"/>
+      </value>
+      <statement name="DO">
+        <block type="console.log" id="G:PZrFMEy|FQ0[nA!J]W">
+          <value name="VALUE">
+            <shadow type="text" id="/$!qQ{3OqH9Mz2NSLig#">
+              <field name="TEXT">Hello, Verge!</field>
+            </shadow>
+            <block type="pickedObject" id="%*(RJ8)(PsH9:(Ji3oaH"/>
+          </value>
+          <next>
+            <block type="checkVRMode" id=";WyPH[R2w[c9an*YMjh6" disabled="true">
+              <statement name="DO_AVAIL">
+                <block type="enterVRMode" id="b,8]B{mo{67OnbtirGWI">
+                  <field name="REF_SPACE">SITTING</field>
+                </block>
+              </statement>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+  </tab>
+  <editorsettings viewport-x="1477" viewport-y="55" viewport-w="728" viewport-h="653.5" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+</xml>
