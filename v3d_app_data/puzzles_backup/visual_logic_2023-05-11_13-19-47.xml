@@ -1,6 +1,6 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
   <tab name="init" type="InitTab" active="false" scrollx="1192" scrolly="615.4999999999999" scale="0.9"></tab>
-  <tab name="main" type="MainTab" active="true" scrollx="1586.3137725270153" scrolly="693.3847490808098" scale="0.9495970198437368">
+  <tab name="main" type="MainTab" active="true" scrollx="1732.3137725270153" scrolly="120.3847490808098" scale="0.9495970198437368">
     <variables xmlns="https://developers.google.com/blockly/xml">
       <variable id="_x4$3q[g0A8f,z}9E-q)" type="">cameraDefaultPosition</variable>
       <variable id="/([aS/f/+3.sFE:nY~2#" type="">roteX</variable>
@@ -15,41 +15,6 @@
       <variable id="n[7Q*_g@,eFc.Yj=?jpx" type="">isAnimationRotY</variable>
       <variable id="ZxbuzUvs%(?hsr[U|Xnz" type="">isAnimationRotZ</variable>
     </variables>
-    <block xmlns="https://developers.google.com/blockly/xml" type="hide" id="iN(x2[O$%I~|9v$qyCr0" x="-1150" y="-690">
-      <value name="VALUE">
-        <shadow type="objectList" id="J:oMwu(4[kR2X7Rjg{Mf">
-          <field name="FIELDNAME">Cube</field>
-        </shadow>
-      </value>
-      <next>
-        <block type="unloadScene" id="uI:sug#$FNL:Z|rL9OR+" disabled="true">
-          <value name="URL">
-            <shadow type="text" id="d_Qz{pQt~f#Tg64*Rw*q">
-              <field name="TEXT">gary_app.gltf</field>
-            </shadow>
-          </value>
-          <next>
-            <block type="setTimeout" id="wt+5:0}73qB8YCj*U*Y;">
-              <value name="VALUE">
-                <shadow type="math_number" id="gtJQ0Z|F`7Q?!XWfjys$">
-                  <field name="NUM">2</field>
-                </shadow>
-              </value>
-              <statement name="DO">
-                <block type="appendScene" id="(2I*Hnqn^jITT$pBu|vc">
-                  <mutation xmlns="http://www.w3.org/1999/xhtml" enableonprogress="false" enableonerror="false" loadcameras="false" loadlights="false" enablealias="false"></mutation>
-                  <value name="URL">
-                    <shadow type="text" id="Fu1oE{pN^/M5$BuxMb^N">
-                      <field name="TEXT">./cocacola.gltf</field>
-                    </shadow>
-                  </value>
-                </block>
-              </statement>
-            </block>
-          </next>
-        </block>
-      </next>
-    </block>
     <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="I!Zr2|$)[vC!CBHItn{)" x="-570" y="-650">
       <field name="EVENT">click</field>
       <field name="PARENT">TRUE</field>
@@ -101,32 +66,16 @@
                         </block>
                       </value>
                       <next>
-                        <block type="controls_ifelse" id="6vnjZ8AUgaE^#@}_O-z=">
-                          <value name="IF0">
-                            <block type="isSceneLoaded" id="?RVoHC4#,z2hN@QNeQ}!">
-                              <value name="URL">
-                                <shadow type="text" id="tcACe@$kA(pEclT8s?q+">
-                                  <field name="TEXT">path/to/scene.gltf</field>
-                                </shadow>
-                                <block type="variables_get" id="{3nseYM!Vr[!f2?`(|_M">
-                                  <field name="VAR" id="eeA$;yt2{Jmu0p3K_MvF">cocacolaPath</field>
-                                </block>
-                              </value>
+                        <block type="appendScene" id="{0Uo}z88kRkjX7oi_I,d">
+                          <mutation xmlns="http://www.w3.org/1999/xhtml" enableonprogress="false" enableonerror="false" loadcameras="false" loadlights="false" enablealias="false"></mutation>
+                          <value name="URL">
+                            <shadow type="text" id="H^38NF/Yb4MfLEX7864^">
+                              <field name="TEXT">./cocacola.gltf</field>
+                            </shadow>
+                            <block type="variables_get" id="tO+TGj%`BX5:itWez7i@">
+                              <field name="VAR" id="eeA$;yt2{Jmu0p3K_MvF">cocacolaPath</field>
                             </block>
                           </value>
-                          <statement name="ELSE">
-                            <block type="appendScene" id="{0Uo}z88kRkjX7oi_I,d">
-                              <mutation xmlns="http://www.w3.org/1999/xhtml" enableonprogress="false" enableonerror="false" loadcameras="false" loadlights="false" enablealias="false"></mutation>
-                              <value name="URL">
-                                <shadow type="text" id="H^38NF/Yb4MfLEX7864^">
-                                  <field name="TEXT">./cocacola.gltf</field>
-                                </shadow>
-                                <block type="variables_get" id="tO+TGj%`BX5:itWez7i@">
-                                  <field name="VAR" id="eeA$;yt2{Jmu0p3K_MvF">cocacolaPath</field>
-                                </block>
-                              </value>
-                            </block>
-                          </statement>
                         </block>
                       </next>
                     </block>
@@ -1253,6 +1202,32 @@
         </block>
       </next>
     </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="hide" id="iN(x2[O$%I~|9v$qyCr0" x="-1290" y="-590">
+      <value name="VALUE">
+        <shadow type="objectList" id="J:oMwu(4[kR2X7Rjg{Mf">
+          <field name="FIELDNAME">Cube</field>
+        </shadow>
+      </value>
+      <next>
+        <block type="unloadScene" id="uI:sug#$FNL:Z|rL9OR+" disabled="true">
+          <value name="URL">
+            <shadow type="text" id="d_Qz{pQt~f#Tg64*Rw*q">
+              <field name="TEXT">gary_app.gltf</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="appendScene" id="(2I*Hnqn^jITT$pBu|vc">
+              <mutation xmlns="http://www.w3.org/1999/xhtml" enableonprogress="false" enableonerror="false" loadcameras="false" loadlights="false" enablealias="false"></mutation>
+              <value name="URL">
+                <shadow type="text" id="Fu1oE{pN^/M5$BuxMb^N">
+                  <field name="TEXT">./cocacola.gltf</field>
+                </shadow>
+              </value>
+            </block>
+          </next>
+        </block>
+      </next>
+    </block>
     <block xmlns="https://developers.google.com/blockly/xml" type="autoRotateCamera" id="-9uvQ4Z@%1f}3%2q8$A9" x="-1310" y="-430">
       <field name="ON_OFF">OFF</field>
       <value name="SPEED">
@@ -1261,6 +1236,7 @@
         </shadow>
       </value>
     </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="RowgerPlugin/axesHelper" id="^2Ihf0WD/Lsb!EcCEdcS" x="-1230" y="-370"/>
     <block xmlns="https://developers.google.com/blockly/xml" type="whenClicked" id="Kr7,oRdn0+TgIoTGs)l}" x="-1370" y="-310">
       <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false" enableifmissed="false"></mutation>
       <field name="X_RAY">FALSE</field>
@@ -1302,6 +1278,26 @@
               </value>
             </block>
           </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="appendScene" id="hN)P)xnBVN#a+^[RUI:h" x="-1350" y="-70">
+      <mutation xmlns="http://www.w3.org/1999/xhtml" enableonprogress="false" enableonerror="false" loadcameras="false" loadlights="false" enablealias="false"></mutation>
+      <value name="URL">
+        <shadow type="text" id="4:584?U2p*U5#Y[/yoER">
+          <field name="TEXT">./cocacola.gltf</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+        <block type="console.log" id="WYV{$PM5T.z+-`nMo%J9">
+          <value name="VALUE">
+            <shadow type="text">
+              <field name="TEXT">Hello, AnimationRotStop</field>
+            </shadow>
+            <block type="variables_get" id="cFT4F]W[M%+]u19nQUi5">
+              <field name="VAR" id="u_8PClv+QH];yiEYn|1c">pepperPath</field>
+            </block>
+          </value>
         </block>
       </statement>
     </block>
